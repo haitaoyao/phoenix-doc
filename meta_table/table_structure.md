@@ -38,6 +38,3 @@ tags: [phoenix, hbase]
 
 
 
-
-{% include JB/setup %}
- 
