@@ -8,14 +8,14 @@ name |type|descrition | 标记
  TABLE_SCHEM | varchar| 类似库名 |N
 TABLE_NAME|varchar|表名|N
 COLUMN_NAME|varchar|列名 |N
-TABLE_CAT|varchar| |N
-TABLE_TYPE|char| |N
+TABLE_CAT|varchar| ——|N
+TABLE_TYPE|char| ——|N
 REMARKS|varchar|备注|N
 DATA_TYPE|INTEGER| 数据类型，对应java.sql.Types， 在com.salesforce.phoenix.schema.PDataType 中使用|N
-PK_NAME|varchar| | Y
+PK_NAME|varchar| ——| Y
 TYPE_NAME |varchar|类型名称，类似VARCHAR这种|N
 SELF_REFERENCING_COL_NAME | varchar| | Y 
-REF_GENERATION|varchar| | Y 
+REF_GENERATION|varchar| ——| Y 
 
 
 
