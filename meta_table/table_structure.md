@@ -3,7 +3,7 @@ Phoenix Meta Table
 ---
 
 
-name |type|descrition | 标记
+name | type | descrition | 标记
 ---|---|---|--
  TABLE_SCHEM | varchar| 类似库名 |N
 TABLE_NAME|varchar|表名|N
