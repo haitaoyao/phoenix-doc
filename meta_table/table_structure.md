@@ -5,10 +5,10 @@ Phoenix Meta Table
 
 name | type | descrition | 标记
 ---|---|---|-----
- TABLE_SCHEM | varchar | 类似库名 | N
-TABLE_NAME|varchar|表名|N
-COLUMN_NAME|varchar|列名 |N
-TABLE_CAT|varchar| ——|N
+ TABLE_SCHEM | varchar | 类似库名 | 
+TABLE_NAME|varchar|表名|
+COLUMN_NAME|varchar|列名 |
+TABLE_CAT|varchar| ——|
 TABLE_TYPE|char| ——|N
 REMARKS|varchar|备注|N
 DATA_TYPE|INTEGER| 数据类型，对应java.sql.Types， 在com.salesforce.phoenix.schema.PDataType 中使用|N
@@ -30,6 +30,9 @@ SQL_DATETIME_SUB|INTEGER|  | Y
 CHAR_OCTET_LENGTH|INTEGER| | Y 
 ORDINAL_POSITION|INTEGER|column顺序
 IS_NULLABLE|VARCHAR| | Y 
+SCOPE_CATALOG|VARCHAR| | Y
+SCOPE_SCHEMA|VARCHAR| | Y
+
 
 
 
