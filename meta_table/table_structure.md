@@ -4,7 +4,7 @@ Phoenix Meta Table
 
 
 name | type | descrition | 标记
----|---|---|--
+---|---|---|-----
  TABLE_SCHEM | varchar | 类似库名 | N
  
  
