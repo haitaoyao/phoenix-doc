@@ -5,10 +5,11 @@ Phoenix Meta Table
 
 name | type | descrition | 标记
 ---|---|---|-----
- TABLE_SCHEM | VARCHAR | 类似库名 | 
+TABLE_SCHEM | VARCHAR | 类似库名 | 
 TABLE_NAME|VARCHAR|表名|
 COLUMN_NAME|VARCHAR|列名 |
 TABLE_CAT|VARCHAR| ——|
+--上面的 都是主键column||---从在这里往下是非主键  |
 TABLE_TYPE|char| ——|
 REMARKS|VARCHAR|备注|
 DATA_TYPE|INTEGER| 数据类型，对应java.sql.Types， 在com.salesforce.phoenix.schema.PDataType 中使用|
