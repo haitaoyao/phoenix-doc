@@ -6,10 +6,6 @@ Phoenix Meta Table
 name | type | descrition | 标记
 ---|---|---|-----
  TABLE_SCHEM | varchar | 类似库名 | N
- 
- 
- 
- 
 TABLE_NAME|varchar|表名|N
 COLUMN_NAME|varchar|列名 |N
 TABLE_CAT|varchar| ——|N
@@ -20,10 +16,6 @@ PK_NAME|varchar| ——| Y
 TYPE_NAME |varchar|类型名称，类似VARCHAR这种|N
 SELF_REFERENCING_COL_NAME | varchar| | Y 
 REF_GENERATION|varchar| ——| Y 
-
-
-
-
 TABLE_SEQ_NUM| BIGINT| 表序列号
 COLUMN_COUNT|INTGER| 基本没有使用。 
 SALT_BUCKETS|INTEGER|散列数。 类似shard份数
