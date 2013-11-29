@@ -9,17 +9,17 @@ name | type | descrition | 标记
 TABLE_NAME|varchar|表名|
 COLUMN_NAME|varchar|列名 |
 TABLE_CAT|varchar| ——|
-TABLE_TYPE|char| ——|N
-REMARKS|varchar|备注|N
-DATA_TYPE|INTEGER| 数据类型，对应java.sql.Types， 在com.salesforce.phoenix.schema.PDataType 中使用|N
+TABLE_TYPE|char| ——|
+REMARKS|varchar|备注|
+DATA_TYPE|INTEGER| 数据类型，对应java.sql.Types， 在com.salesforce.phoenix.schema.PDataType 中使用|
 PK_NAME|varchar| ——| Y
-TYPE_NAME |varchar|类型名称，类似VARCHAR这种|N
+TYPE_NAME |varchar|类型名称，类似VARCHAR这种|
 SELF_REFERENCING_COL_NAME | varchar| | Y 
 REF_GENERATION|varchar| ——| Y 
 TABLE_SEQ_NUM| BIGINT| 表序列号
 COLUMN_COUNT|INTGER| 基本没有使用。 
 SALT_BUCKETS|INTEGER|散列数。 类似shard份数
-COLUMN_SIZE|INTEGER| column大小。 基本上只有INTEGER这种才会有值， varchar char等都是null
+COLUMN_SIZE|INTEGER| column大小。 基本上只有INTEGER这种才会有值， varchar char等都是null |
 BUFFER_LENGTH|INTEGER| | Y 
 DECIMAL_DIGITS|INTEGER|decimal类型digits位数
 NUM_PREC_RADIX|INTEGER| | Y 
@@ -32,6 +32,14 @@ ORDINAL_POSITION|INTEGER|column顺序
 IS_NULLABLE|VARCHAR| | Y 
 SCOPE_CATALOG|VARCHAR| | Y
 SCOPE_SCHEMA|VARCHAR| | Y
+SCOPE_TABLE|VARCHAR| | Y
+SOURCE_DATA_TYPE|INTEGER| | Y
+IS_AUTOINCREMENT|INTEGER| | Y
+COLUMN_MODIFIER|VARCHAR| | Y
+DATA_TABLE_NAME| VARCHAR | | Y
+INDEX_STATE| VARCHAR | |Y
+IMMUTABLE_ROWS| VARCHAR| | Y
+
 
 
 
