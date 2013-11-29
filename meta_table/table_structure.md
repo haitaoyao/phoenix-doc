@@ -1,10 +1,7 @@
+
+Phoenix Meta Table
 ---
-layout: post
-title: "Phoenix system table schema"
-description: "the meta data for phoenix"
-category: "phoenix"
-tags: [phoenix, hbase]
----
+
 
 |name |type|descrition | 标记|
 |---|---|---|--|
