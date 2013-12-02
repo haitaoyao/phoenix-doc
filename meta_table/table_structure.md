@@ -41,11 +41,15 @@ DATA_TABLE_NAME| VARCHAR | | Y
 INDEX_STATE| VARCHAR | |Y
 IMMUTABLE_ROWS| VARCHAR| | Y
 
+### 备注
+* column_name 为null 时, 说明是表; column_name 不为空时, 代表表的column信息
+
+
 ## create table flow
 flow chart for create table, [here](create_table_flow.png )
 ![Alt Text](create_table_flow.png)
 
-* table flow code websequencegram](https://www.websequencediagrams.com/)
+* table flow code [websequencegram](https://www.websequencediagrams.com/)
 
 ```
 
