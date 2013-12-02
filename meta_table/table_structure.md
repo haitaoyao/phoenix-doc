@@ -45,9 +45,26 @@ IMMUTABLE_ROWS| VARCHAR| | Y
 flow chart for create table, [here](create_table_flow.png )
 ![Alt Text](create_table_flow.png)
 
+* table flow code websequencegram](https://www.websequencediagrams.com/)
+```
+title phoenix create table flow
 
-
-
+PhoenixConnection -> PhoenixPreparedStatement :  new instance
+PhoenixPreparedStatement -> PhoenixStatementParser : nextStatement start to parse statement
+PhoenixStatementParser -> SQLParser : nextStatement
+SQLParser -> PhoenixSQLParser : nextStatement
+PhoenixSQLParser -> antlr : parse statement
+antlr  -> ExecutableNodeFactory : createTable 
+ExecutableNodeFactory --> -PhoenixConnection : return new ExecutableCreateTableStatement
+PhoenixConnection -> ExecutableCreateTableStatement :  execute
+ExecutableCreateTableStatement -> ExecutableCreateTableStatement : executeUpdate
+ExecutableCreateTableStatement -> ExecutableCreateTableStatement : optimizePlan
+ExecutableCreateTableStatement -> ExecutableCreateTableStatement : compilePlan
+ExecutableCreateTableStatement -> CreateTableCompiler : compile
+CreateTableCompiler --> -ExecutableCreateTableStatement : MutationPlan
+ExecutableCreateTableStatement -> MutationPlan : execute
+MutationPlan -> MetaDataClient : createTable
+```
 
 
 
