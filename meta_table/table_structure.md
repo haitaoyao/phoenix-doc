@@ -41,6 +41,10 @@ DATA_TABLE_NAME| VARCHAR | | Y
 INDEX_STATE| VARCHAR | |Y
 IMMUTABLE_ROWS| VARCHAR| | Y
 
+## create table flow
+flow chart for create table, [here](create_table_flow.png )
+![Alt Text](create_table_flow.png)
+
 
 
 
