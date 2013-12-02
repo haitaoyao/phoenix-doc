@@ -46,7 +46,9 @@ flow chart for create table, [here](create_table_flow.png )
 ![Alt Text](create_table_flow.png)
 
 * table flow code websequencegram](https://www.websequencediagrams.com/)
+
 ```
+
 title phoenix create table flow
 
 PhoenixConnection -> PhoenixPreparedStatement :  new instance
@@ -64,6 +66,7 @@ ExecutableCreateTableStatement -> CreateTableCompiler : compile
 CreateTableCompiler --> -ExecutableCreateTableStatement : MutationPlan
 ExecutableCreateTableStatement -> MutationPlan : execute
 MutationPlan -> MetaDataClient : createTable
+
 ```
 
 
